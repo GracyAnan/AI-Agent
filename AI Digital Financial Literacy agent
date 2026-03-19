@@ -13,7 +13,7 @@ from langchain.chains.combine_documents.stuff import StuffDocumentsChain
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
 # ----------------- Model Setup -----------------
-os.environ['REPLICATE_API_TOKEN'] = "r8_ZUPkYC1tKImKiLeCG855qXMmLvBm8QK15gvDv"
+os.environ['REPLICATE_API_TOKEN'] = ""
 model_path = "ibm-granite/granite-3.3-8b-instruct"
 tokenizer = AutoTokenizer.from_pretrained(model_path)
 model = Replicate(model=model_path, replicate_api_token=os.environ['REPLICATE_API_TOKEN'])
